@@ -21,7 +21,6 @@ class Sunshine < Formula
   def install
     ENV["BRANCH"] = "master"
     ENV["BUILD_VERSION"] = "v0.23.1"
-    ENV["COMMIT"] = "8b21db64fb8e8ffb9c24a412dbc66b7410699211"
 
     args = %W[
       -DBUILD_WERROR=ON
