@@ -5,7 +5,7 @@ class Sunshine < Formula
   homepage "https://app.lizardbyte.dev/Sunshine"
   url "https://github.com/LizardByte/Sunshine.git",
     tag: "master"
-  version "0.23.2"
+  version "0.23.3"
   license all_of: ["GPL-3.0-only"]
   head "https://github.com/LizardByte/Sunshine.git", branch: "master"
 
@@ -21,7 +21,8 @@ class Sunshine < Formula
   def install
     ENV["BRANCH"] = "master"
     ENV["BUILD_VERSION"] = "v0.23.2"
-
+    ENV["COMMIT"] = "f0a00ae"
+ 
     args = %W[
       -DBUILD_WERROR=ON
       -DCMAKE_INSTALL_PREFIX=#{prefix}
